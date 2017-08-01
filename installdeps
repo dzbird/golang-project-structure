@@ -1,0 +1,28 @@
+#!/bin/bash
+source ./setgopath
+
+# Add go gets below. The dependencies are kept separate from the source
+#-------------------------------------------------------------------------------
+
+go get gopkg.in/macaron.v1
+
+
+
+#-------------------------------------------------------------------------------
+# And reset the gopath below:
+
+# Create a .vscode settings file, so that autoformatting works
+read -d '' VSCODEJSON << EOF
+{
+  "go.gopath": "$GOPATH"
+}
+
+EOF
+echo $GOPATH
+
+
+if ! [ -d "./.vscode" ]; then 
+  mkdir .vscode
+  echo $VSCODEJSON > ./.vscode/settings.json
+fi
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DEPSPATH=$(pwd)/dependencies
+CODEPATH=$(pwd)/src
+GOPATH=$DEPSPATH

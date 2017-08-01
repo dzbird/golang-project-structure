@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source ./setgopath
+go run $CODEPATH/main.go

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source ./setgopath
+
+go build -o "dist/app" $CODEPATH/*.go
