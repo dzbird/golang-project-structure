@@ -1,5 +1,11 @@
 ## Usage
 
+### Adding your dependencies
+
+Edit the file `installdeps` and add `go get ...` statements. 
+Example: <a href="https://github.com/dzbird/golang-project-structure/blob/master/installdeps#L7">Line 7</a>
+
+
 ### Install dependencies with:
 
 ```
